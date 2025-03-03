@@ -11,6 +11,8 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { ModeToggle } from "./mode-toggle"
+import { Button } from "./ui/button"
+import { GetGeminiResponse } from "../../wailsjs/go/main/App"
  
 // Menu items.
 const items = [
@@ -53,6 +55,7 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
         <SidebarGroup>
+          <Button onClick={() => GetGeminiResponse()}></Button>
           <ModeToggle />
         </SidebarGroup>
       </SidebarContent>
